@@ -1,10 +1,11 @@
 # Proveably a random Raffle Contract 
 
-## About 
-This code is use to create a proveably random smart contract lottery. 
-As we have seen many cases that there is some lottery in which they don't give funds , there is some sort of manipulation . 
+## Overview
 
-# What we want to do it ?
+The above code sample is written in solidity, Traditional lotteries often lack transparency, leaving room for manipulation.
+ So, I have created a project that is a decentralized lottery system using ensures fairness and transparency for all participants. Players can participate by paying for tickets. Integrating it with Chainlink VRF ensures a truly random winner is picked. Automating it by using chainlink automation, ensures that automatically winner will be picked and the winning amount will be transferred to the winner automatically, hence making is more advanced.
+
+# What I wanted to do  ?
  1. User can enter by paying for a ticket 
     1. The ticket fee are going to go to winner during the draw .
  2. After X period of time lottery will automatically draw a winner.
@@ -12,73 +13,19 @@ As we have seen many cases that there is some lottery in which they don't give f
  3. Using chainLink VRF and chainLink Automation 
     chainLink VRF - It will be used to find randomness (number)
     chainLink Automation - Time based trigger 
-    
-    
-    
-    
-## Foundry
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+# Getting Started 
+ ## Requirements 
+   ### [Git](https://git-scm.com/)
+        You'll know you did it right if you can run ```git --version``` and you see a response like ```git version x.x.x```.
+   ### [Foundry](https://getfoundry.sh/)
+       You'll know you did it right if you can run ```forge --version``` and you see a response like ```forge 0.2.0 (816e00b 2023-03-16T00:05:26.396218Z)```
+ 
+ ## QuickStart
+   To clone this Repo use command -
+   ``` git clone https://github.com/hoBabu1/Raffle_Smart_Contract-Foundry-.git ```
 
-Foundry consists of:
+# Deployed On Sepolia Testnet 
+ [Interact With Contract](https://sepolia.etherscan.io/address/0xe7ae1641191a407b98638c5b2fbcc879f7ec5a92 )
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
-
-## Documentation
-
-https://book.getfoundry.sh/
-
-## Usage
-
-### Build
-
-```shell
-$ forge build
-```
-
-### Test
-
-```shell
-$ forge test
-```
-
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+![alt text](image.png)
