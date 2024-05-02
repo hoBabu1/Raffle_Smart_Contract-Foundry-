@@ -17,8 +17,7 @@ The above code sample is written in solidity, Traditional lotteries often lack t
 # Getting Started 
  ## Requirements 
    ### [Git](https://git-scm.com/)
-        You'll know you did it right if you can run 
-        ``` git --version ``` 
+        You'll know you did it right if you can run <mark>git --version</mark> 
         and you see a response like
          ``` git version x.x.x ```.
    ### [Foundry](https://getfoundry.sh/)
